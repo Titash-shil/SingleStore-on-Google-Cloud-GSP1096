@@ -1,4 +1,4 @@
-# Build Infrastructure with Terraform on Google Cloud: Challenge Lab || [GSP1096](https://www.cloudskillsboost.google/focuses/56622?parent=catalog) ||
+# SingleStore on Google Cloud || [GSP1096](https://www.cloudskillsboost.google/focuses/56622?parent=catalog) ||
 
 ## # Like, comment, share & Don't forget to subscribe [Qwiklab_Explorers](https://youtube.com/@titashshil?si=RgamNu1dc9jVIbJN) 👍😄🤝
 
