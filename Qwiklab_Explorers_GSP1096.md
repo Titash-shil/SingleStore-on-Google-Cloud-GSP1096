@@ -17,6 +17,8 @@ sudo chmod +x qwiklab_explorers_gsp1096.sh
 ./qwiklab_explorers_gsp1096.sh
 ```
 
+- ### Follow Next Steps from the video carefully
+
 ---
 
 ## Congratulations ..!!🎉  You completed the lab shortly..😃💯
