@@ -131,11 +131,7 @@ task6_pubsub_dataflow() {
         echo -e "${BOLD_TEXT}4. Assign a name (e.g., Qwiklab-Explorers) and review the job details.${RESET}"
         echo -e "${BOLD_TEXT}5. Scroll down and click 'Run Job'.${RESET}"
         
-        echo
-        echo "${RED_TEXT}${BOLD_TEXT}*********************************************${RESET_FORMAT}"
-        echo "${RED_TEXT}${BOLD_TEXT}        FOLLOW NEXT STEPS FROM THE VIDEO     ${RESET_FORMAT}"
-        echo "${RED_TEXT}${BOLD_TEXT}*********************************************${RESET_FORMAT}"
-        echo
+        
 }
 
 main() {
