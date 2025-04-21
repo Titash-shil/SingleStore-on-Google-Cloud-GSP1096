@@ -126,10 +126,7 @@ task6_pubsub_dataflow() {
         
         echo -e "\n${BOLD_TEXT}${GREEN_TEXT}Manual Steps Required for Task 6:${RESET}"
         echo -e "${BOLD_TEXT}1. Open the Dataflow console: https://console.cloud.google.com/dataflow/jobs?referrer=search&project=${RESET}"
-        echo -e "${BOLD_TEXT}2. Locate a job named 'GCStoPS' with a 'failed' status.${RESET}"
-        echo -e "${BOLD_TEXT}3. Select the job and click 'Clone'.${RESET}"
-        echo -e "${BOLD_TEXT}4. Assign a name (e.g., Qwiklab-Explorers) and review the job details.${RESET}"
-        echo -e "${BOLD_TEXT}5. Scroll down and click 'Run Job'.${RESET}"
+        echo -e "${BOLD_TEXT}4. Assign a name (e.g. : Qwiklab-Explorers) and review the job details.${RESET}"
         
         
 }
