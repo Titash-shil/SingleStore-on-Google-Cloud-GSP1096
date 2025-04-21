@@ -90,13 +90,13 @@ task5_setup_storage() {
         echo -e "\n${BOLD_TEXT}${BLUE_TEXT}=== Task 5: Setup a Cloud Storage Bucket ===${RESET_FORMAT}\n"
         
         PROJECT_ID=$(gcloud config get-value project)
-        read -p "${YELLOW_TEXT}${BOLD_TEXT}Enter the Region: ${RESET_FORMAT}" REGION
+        read -p "${GREEN_TEXT}${BOLD_TEXT}Enter the Region: ${RESET_FORMAT}" REGION
         export REGION
         
         gcloud config set compute/region $REGION
         
-        log_info "Project ID: ${CYAN_TEXT}${BOLD_TEXT}$PROJECT_ID${RESET_FORMAT}"
-        log_info "Region: ${CYAN_TEXT}${BOLD_TEXT}$REGION${RESET_FORMAT}"
+        log_info "Project ID: ${BLACK_TEXT}${BOLD_TEXT}$PROJECT_ID${RESET_FORMAT}"
+        log_info "Region: ${BLACK_TEXT}${BOLD_TEXT}$REGION${RESET_FORMAT}"
         
         execute_with_retry "gcloud storage buckets create gs://$PROJECT_ID --location=$REGION" "Creating Cloud Storage bucket"
         
@@ -113,7 +113,7 @@ task5_setup_storage() {
         }
 
 task6_pubsub_dataflow() {
-        echo -e "\n${BOLD_TEXT}${BLUE_TEXT}=== Task 6: Pub/Sub and Dataflow ===${RESET}\n"
+        echo -e "\n${BOLD_TEXT}${CYAN_TEXT}=== Task 6: Pub/Sub and Dataflow ===${RESET}\n"
         
         log_info "Checking Pub/Sub topics..."
         gcloud pubsub topics list | grep "Taxi" || log_warning "Taxi topic not found"
@@ -124,7 +124,7 @@ task6_pubsub_dataflow() {
         log_info "Checking Dataflow jobs..."
         gcloud dataflow jobs list | grep "GCStoPS" || log_warning "GCStoPS job not found"
         
-        echo -e "\n${BOLD_TEXT}${YELLOW_TEXT}Manual Steps Required for Task 6:${RESET}"
+        echo -e "\n${BOLD_TEXT}${GREEN_TEXT}Manual Steps Required for Task 6:${RESET}"
         echo -e "${BOLD_TEXT}1. Open the Dataflow console: https://console.cloud.google.com/dataflow/jobs?referrer=search&project=${RESET}"
         echo -e "${BOLD_TEXT}2. Locate a job named 'GCStoPS' with a 'failed' status.${RESET}"
         echo -e "${BOLD_TEXT}3. Select the job and click 'Clone'.${RESET}"
@@ -132,9 +132,9 @@ task6_pubsub_dataflow() {
         echo -e "${BOLD_TEXT}5. Scroll down and click 'Run Job'.${RESET}"
         
         echo
-        echo "${GREEN_TEXT}${BOLD_TEXT}*********************************************${RESET_FORMAT}"
-        echo "${GREEN_TEXT}${BOLD_TEXT}        FOLLOW NEXT STEPS FROM THE VIDEO     ${RESET_FORMAT}"
-        echo "${GREEN_TEXT}${BOLD_TEXT}*********************************************${RESET_FORMAT}"
+        echo "${RED_TEXT}${BOLD_TEXT}*********************************************${RESET_FORMAT}"
+        echo "${RED_TEXT}${BOLD_TEXT}        FOLLOW NEXT STEPS FROM THE VIDEO     ${RESET_FORMAT}"
+        echo "${RED_TEXT}${BOLD_TEXT}*********************************************${RESET_FORMAT}"
         echo
 }
 
